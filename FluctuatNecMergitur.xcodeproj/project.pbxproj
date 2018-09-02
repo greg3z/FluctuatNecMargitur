@@ -15,6 +15,7 @@
 		13576BE7213C3C83002C953D /* View.h in Headers */ = {isa = PBXBuildFile; fileRef = 13576BE5213C3C83002C953D /* View.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13576BEA213C3C83002C953D /* View.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13576BE3213C3C83002C953D /* View.framework */; };
 		13576BEB213C3C83002C953D /* View.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13576BE3213C3C83002C953D /* View.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13576BF1213C3D02002C953D /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF0213C3D02002C953D /* ContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		13576BE3213C3C83002C953D /* View.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = View.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13576BE5213C3C83002C953D /* View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
 		13576BE6213C3C83002C953D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13576BF0213C3D02002C953D /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				13576BE5213C3C83002C953D /* View.h */,
 				13576BE6213C3C83002C953D /* Info.plist */,
+				13576BF0213C3D02002C953D /* ContainerViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 					};
 					13576BE2213C3C83002C953D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -235,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13576BF1213C3D02002C953D /* ContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +390,7 @@
 		13576BDC213C3C3D002C953D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FluctuatNecMergitur/Info.plist;
@@ -402,6 +408,7 @@
 		13576BDD213C3C3D002C953D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FluctuatNecMergitur/Info.plist;
@@ -419,6 +426,7 @@
 		13576BED213C3C83002C953D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -436,6 +444,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = greg3z.View;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -446,6 +455,7 @@
 		13576BEE213C3C83002C953D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
