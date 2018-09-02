@@ -17,6 +17,7 @@
 		13576BEB213C3C83002C953D /* View.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13576BE3213C3C83002C953D /* View.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13576BF1213C3D02002C953D /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF0213C3D02002C953D /* ContainerViewController.swift */; };
 		13576BF3213C3EE1002C953D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF2213C3EE1002C953D /* LoadingViewController.swift */; };
+		13576BF5213C3F74002C953D /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF4213C3F74002C953D /* ErrorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		13576BE6213C3C83002C953D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13576BF0213C3D02002C953D /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		13576BF2213C3EE1002C953D /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		13576BF4213C3F74002C953D /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				13576BE5213C3C83002C953D /* View.h */,
 				13576BE6213C3C83002C953D /* Info.plist */,
 				13576BF0213C3D02002C953D /* ContainerViewController.swift */,
+				13576BF4213C3F74002C953D /* ErrorViewController.swift */,
 				13576BF2213C3EE1002C953D /* LoadingViewController.swift */,
 			);
 			path = View;
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13576BF1213C3D02002C953D /* ContainerViewController.swift in Sources */,
+				13576BF5213C3F74002C953D /* ErrorViewController.swift in Sources */,
 				13576BF3213C3EE1002C953D /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
