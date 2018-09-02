@@ -12,7 +12,34 @@
 		13576BD2213C3C39002C953D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13576BD0213C3C39002C953D /* Main.storyboard */; };
 		13576BD4213C3C3D002C953D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13576BD3213C3C3D002C953D /* Assets.xcassets */; };
 		13576BD7213C3C3D002C953D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13576BD5213C3C3D002C953D /* LaunchScreen.storyboard */; };
+		13576BE7213C3C83002C953D /* View.h in Headers */ = {isa = PBXBuildFile; fileRef = 13576BE5213C3C83002C953D /* View.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13576BEA213C3C83002C953D /* View.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13576BE3213C3C83002C953D /* View.framework */; };
+		13576BEB213C3C83002C953D /* View.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13576BE3213C3C83002C953D /* View.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13576BE8213C3C83002C953D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13576BC1213C3C39002C953D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13576BE2213C3C83002C953D;
+			remoteInfo = View;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13576BEF213C3C83002C953D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				13576BEB213C3C83002C953D /* View.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		13576BC9213C3C39002C953D /* FluctuatNecMergitur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluctuatNecMergitur.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +49,21 @@
 		13576BD3213C3C3D002C953D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13576BD6213C3C3D002C953D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13576BD8213C3C3D002C953D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13576BE3213C3C83002C953D /* View.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = View.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13576BE5213C3C83002C953D /* View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		13576BE6213C3C83002C953D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		13576BC6213C3C39002C953D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13576BEA213C3C83002C953D /* View.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13576BDF213C3C83002C953D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				13576BCB213C3C39002C953D /* FluctuatNecMergitur */,
+				13576BE4213C3C83002C953D /* View */,
 				13576BCA213C3C39002C953D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				13576BC9213C3C39002C953D /* FluctuatNecMergitur.app */,
+				13576BE3213C3C83002C953D /* View.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,7 +104,27 @@
 			path = FluctuatNecMergitur;
 			sourceTree = "<group>";
 		};
+		13576BE4213C3C83002C953D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13576BE5213C3C83002C953D /* View.h */,
+				13576BE6213C3C83002C953D /* Info.plist */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		13576BE0213C3C83002C953D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13576BE7213C3C83002C953D /* View.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		13576BC8213C3C39002C953D /* FluctuatNecMergitur */ = {
@@ -74,15 +134,35 @@
 				13576BC5213C3C39002C953D /* Sources */,
 				13576BC6213C3C39002C953D /* Frameworks */,
 				13576BC7213C3C39002C953D /* Resources */,
+				13576BEF213C3C83002C953D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				13576BE9213C3C83002C953D /* PBXTargetDependency */,
 			);
 			name = FluctuatNecMergitur;
 			productName = FluctuatNecMergitur;
 			productReference = 13576BC9213C3C39002C953D /* FluctuatNecMergitur.app */;
 			productType = "com.apple.product-type.application";
+		};
+		13576BE2213C3C83002C953D /* View */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13576BEC213C3C83002C953D /* Build configuration list for PBXNativeTarget "View" */;
+			buildPhases = (
+				13576BDE213C3C83002C953D /* Sources */,
+				13576BDF213C3C83002C953D /* Frameworks */,
+				13576BE0213C3C83002C953D /* Headers */,
+				13576BE1213C3C83002C953D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = View;
+			productName = View;
+			productReference = 13576BE3213C3C83002C953D /* View.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +175,9 @@
 				ORGANIZATIONNAME = "Grégoire Lhotellier";
 				TargetAttributes = {
 					13576BC8213C3C39002C953D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					13576BE2213C3C83002C953D = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -113,6 +196,7 @@
 			projectRoot = "";
 			targets = (
 				13576BC8213C3C39002C953D /* FluctuatNecMergitur */,
+				13576BE2213C3C83002C953D /* View */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +212,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13576BE1213C3C83002C953D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +231,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13576BDE213C3C83002C953D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13576BE9213C3C83002C953D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13576BE2213C3C83002C953D /* View */;
+			targetProxy = 13576BE8213C3C83002C953D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		13576BD0213C3C39002C953D /* Main.storyboard */ = {
@@ -310,6 +416,60 @@
 			};
 			name = Release;
 		};
+		13576BED213C3C83002C953D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = View/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = greg3z.View;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13576BEE213C3C83002C953D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = View/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = greg3z.View;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +487,15 @@
 			buildConfigurations = (
 				13576BDC213C3C3D002C953D /* Debug */,
 				13576BDD213C3C3D002C953D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13576BEC213C3C83002C953D /* Build configuration list for PBXNativeTarget "View" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13576BED213C3C83002C953D /* Debug */,
+				13576BEE213C3C83002C953D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
