@@ -18,6 +18,7 @@
 		13576BF1213C3D02002C953D /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF0213C3D02002C953D /* ContainerViewController.swift */; };
 		13576BF3213C3EE1002C953D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF2213C3EE1002C953D /* LoadingViewController.swift */; };
 		13576BF5213C3F74002C953D /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF4213C3F74002C953D /* ErrorViewController.swift */; };
+		13576BF7213C4012002C953D /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF6213C4012002C953D /* EmptyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		13576BF0213C3D02002C953D /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		13576BF2213C3EE1002C953D /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		13576BF4213C3F74002C953D /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		13576BF6213C4012002C953D /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +117,36 @@
 			children = (
 				13576BE5213C3C83002C953D /* View.h */,
 				13576BE6213C3C83002C953D /* Info.plist */,
+				13576BF9213C4075002C953D /* Models */,
+				13576BFA213C407E002C953D /* Screens */,
+				13576BF8213C405F002C953D /* ViewControllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13576BF8213C405F002C953D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				13576BF0213C3D02002C953D /* ContainerViewController.swift */,
+				13576BF6213C4012002C953D /* EmptyViewController.swift */,
 				13576BF4213C3F74002C953D /* ErrorViewController.swift */,
 				13576BF2213C3EE1002C953D /* LoadingViewController.swift */,
 			);
-			path = View;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		13576BF9213C4075002C953D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		13576BFA213C407E002C953D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +274,7 @@
 			files = (
 				13576BF1213C3D02002C953D /* ContainerViewController.swift in Sources */,
 				13576BF5213C3F74002C953D /* ErrorViewController.swift in Sources */,
+				13576BF7213C4012002C953D /* EmptyViewController.swift in Sources */,
 				13576BF3213C3EE1002C953D /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
