@@ -20,6 +20,7 @@
 		13576BF5213C3F74002C953D /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF4213C3F74002C953D /* ErrorViewController.swift */; };
 		13576BF7213C4012002C953D /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF6213C4012002C953D /* EmptyViewController.swift */; };
 		13576BFC213C40FD002C953D /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BFB213C40FD002C953D /* CarList.swift */; };
+		13576BFF213C418E002C953D /* CarsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BFE213C418E002C953D /* CarsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		13576BF4213C3F74002C953D /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		13576BF6213C4012002C953D /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		13576BFB213C40FD002C953D /* CarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarList.swift; sourceTree = "<group>"; };
+		13576BFE213C418E002C953D /* CarsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,10 +131,8 @@
 		13576BF8213C405F002C953D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				13576BF0213C3D02002C953D /* ContainerViewController.swift */,
-				13576BF6213C4012002C953D /* EmptyViewController.swift */,
-				13576BF4213C3F74002C953D /* ErrorViewController.swift */,
-				13576BF2213C3EE1002C953D /* LoadingViewController.swift */,
+				13576BFD213C416D002C953D /* Generic */,
+				13576BFE213C418E002C953D /* CarsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -150,6 +150,17 @@
 			children = (
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		13576BFD213C416D002C953D /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				13576BF0213C3D02002C953D /* ContainerViewController.swift */,
+				13576BF6213C4012002C953D /* EmptyViewController.swift */,
+				13576BF4213C3F74002C953D /* ErrorViewController.swift */,
+				13576BF2213C3EE1002C953D /* LoadingViewController.swift */,
+			);
+			path = Generic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 				13576BF1213C3D02002C953D /* ContainerViewController.swift in Sources */,
 				13576BF5213C3F74002C953D /* ErrorViewController.swift in Sources */,
 				13576BF7213C4012002C953D /* EmptyViewController.swift in Sources */,
+				13576BFF213C418E002C953D /* CarsTableViewController.swift in Sources */,
 				13576BF3213C3EE1002C953D /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
