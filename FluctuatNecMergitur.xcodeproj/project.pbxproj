@@ -19,6 +19,7 @@
 		13576BF3213C3EE1002C953D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF2213C3EE1002C953D /* LoadingViewController.swift */; };
 		13576BF5213C3F74002C953D /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF4213C3F74002C953D /* ErrorViewController.swift */; };
 		13576BF7213C4012002C953D /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF6213C4012002C953D /* EmptyViewController.swift */; };
+		13576BFC213C40FD002C953D /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BFB213C40FD002C953D /* CarList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		13576BF2213C3EE1002C953D /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		13576BF4213C3F74002C953D /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		13576BF6213C4012002C953D /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
+		13576BFB213C40FD002C953D /* CarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		13576BF9213C4075002C953D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				13576BFB213C40FD002C953D /* CarList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13576BFC213C40FD002C953D /* CarList.swift in Sources */,
 				13576BF1213C3D02002C953D /* ContainerViewController.swift in Sources */,
 				13576BF5213C3F74002C953D /* ErrorViewController.swift in Sources */,
 				13576BF7213C4012002C953D /* EmptyViewController.swift in Sources */,
