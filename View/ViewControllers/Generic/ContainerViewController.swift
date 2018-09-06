@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class ContainerViewController: UIViewController {
+internal final class ContainerViewController: UIViewController {
 
     private var contentViewController: UIViewController
 

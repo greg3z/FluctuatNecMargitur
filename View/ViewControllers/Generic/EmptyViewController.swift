@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class EmptyViewController: UIViewController {
+internal final class EmptyViewController: UIViewController {
 
     private let label = UILabel()
 

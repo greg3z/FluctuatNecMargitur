@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class ErrorViewController: UIViewController {
+internal final class ErrorViewController: UIViewController {
 
     private let label = UILabel()
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class LoadingViewController: UIViewController {
+internal final class LoadingViewController: UIViewController {
 
     private let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
 

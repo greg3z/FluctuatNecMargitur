@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class CarsTableViewController: UITableViewController {
+internal final class CarsTableViewController: UITableViewController {
 
     public enum Callback {
         case carSelected(CarList)
