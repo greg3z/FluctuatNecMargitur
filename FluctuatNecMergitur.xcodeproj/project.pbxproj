@@ -26,6 +26,7 @@
 		13576C072141DD01002C953D /* CarDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C062141DD01002C953D /* CarDetails.swift */; };
 		13576C092141DD80002C953D /* CarDetailsInternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C082141DD80002C953D /* CarDetailsInternalViewController.swift */; };
 		13576C0B2141DF21002C953D /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C0A2141DF21002C953D /* CarDetailsViewController.swift */; };
+		13576C0D2141E1DA002C953D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C0C2141E1DA002C953D /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		13576C062141DD01002C953D /* CarDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetails.swift; sourceTree = "<group>"; };
 		13576C082141DD80002C953D /* CarDetailsInternalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsInternalViewController.swift; sourceTree = "<group>"; };
 		13576C0A2141DF21002C953D /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
+		13576C0C2141E1DA002C953D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			children = (
 				13576C0A2141DF21002C953D /* CarDetailsViewController.swift */,
 				13576C00213C9821002C953D /* CarsListViewController.swift */,
+				13576C0C2141E1DA002C953D /* LoginViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13576C0D2141E1DA002C953D /* LoginViewController.swift in Sources */,
 				13576C072141DD01002C953D /* CarDetails.swift in Sources */,
 				13576C0B2141DF21002C953D /* CarDetailsViewController.swift in Sources */,
 				13576C01213C9821002C953D /* CarsListViewController.swift in Sources */,
