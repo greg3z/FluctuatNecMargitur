@@ -12,6 +12,7 @@ public final class CarsTableViewController: UITableViewController {
 
     public enum Callback {
         case carSelected(CarList)
+        case refresh
     }
     public var callback: ((Callback) -> Void)?
 
@@ -29,6 +30,13 @@ public final class CarsTableViewController: UITableViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(didPullToRefresh), for: .valueChanged)
+        self.refreshControl = refreshControl
+    }
+
+    @objc private func didPullToRefresh() {
+        callback?(.refresh)
     }
 
 }

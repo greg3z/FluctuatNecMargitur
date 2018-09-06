@@ -27,10 +27,7 @@ public final class ContainerViewController: UIViewController {
     }
 
     private func displayViewController() {
-        view.addSubview(contentViewController.view)
-        contentViewController.view.frame = view.bounds
-        addChildViewController(contentViewController)
-        contentViewController.didMove(toParentViewController: self)
+        add(child: contentViewController)
     }
 
     public func setViewController(_ viewController: UIViewController) {

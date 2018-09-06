@@ -21,6 +21,8 @@
 		13576BF7213C4012002C953D /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF6213C4012002C953D /* EmptyViewController.swift */; };
 		13576BFC213C40FD002C953D /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BFB213C40FD002C953D /* CarList.swift */; };
 		13576BFF213C418E002C953D /* CarsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BFE213C418E002C953D /* CarsTableViewController.swift */; };
+		13576C01213C9821002C953D /* CarsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C00213C9821002C953D /* CarsListViewController.swift */; };
+		13576C03213C9888002C953D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C02213C9888002C953D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		13576BF6213C4012002C953D /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		13576BFB213C40FD002C953D /* CarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarList.swift; sourceTree = "<group>"; };
 		13576BFE213C418E002C953D /* CarsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewController.swift; sourceTree = "<group>"; };
+		13576C00213C9821002C953D /* CarsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListViewController.swift; sourceTree = "<group>"; };
+		13576C02213C9888002C953D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 				13576BF9213C4075002C953D /* Models */,
 				13576BFA213C407E002C953D /* Screens */,
 				13576BF8213C405F002C953D /* ViewControllers */,
+				13576C02213C9888002C953D /* Extensions.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 		13576BFA213C407E002C953D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				13576C00213C9821002C953D /* CarsListViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -286,8 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13576C01213C9821002C953D /* CarsListViewController.swift in Sources */,
 				13576BFC213C40FD002C953D /* CarList.swift in Sources */,
 				13576BF1213C3D02002C953D /* ContainerViewController.swift in Sources */,
+				13576C03213C9888002C953D /* Extensions.swift in Sources */,
 				13576BF5213C3F74002C953D /* ErrorViewController.swift in Sources */,
 				13576BF7213C4012002C953D /* EmptyViewController.swift in Sources */,
 				13576BFF213C418E002C953D /* CarsTableViewController.swift in Sources */,
