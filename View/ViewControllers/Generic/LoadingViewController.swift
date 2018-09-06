@@ -22,12 +22,7 @@ internal final class LoadingViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-        activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(activityIndicatorView)
-        NSLayoutConstraint.activate([
-            activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-            ])
+        view.addCentered(activityIndicatorView)
     }
 
 }

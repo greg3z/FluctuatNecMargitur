@@ -24,6 +24,7 @@
 		13576C01213C9821002C953D /* CarsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C00213C9821002C953D /* CarsListViewController.swift */; };
 		13576C03213C9888002C953D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C02213C9888002C953D /* Extensions.swift */; };
 		13576C072141DD01002C953D /* CarDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C062141DD01002C953D /* CarDetails.swift */; };
+		13576C092141DD80002C953D /* CarDetailsInternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C082141DD80002C953D /* CarDetailsInternalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		13576C00213C9821002C953D /* CarsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListViewController.swift; sourceTree = "<group>"; };
 		13576C02213C9888002C953D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		13576C062141DD01002C953D /* CarDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetails.swift; sourceTree = "<group>"; };
+		13576C082141DD80002C953D /* CarDetailsInternalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsInternalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				13576BFD213C416D002C953D /* Generic */,
+				13576C082141DD80002C953D /* CarDetailsInternalViewController.swift */,
 				13576BFE213C418E002C953D /* CarsTableViewController.swift */,
 			);
 			path = ViewControllers;
@@ -300,6 +303,7 @@
 				13576BFC213C40FD002C953D /* CarList.swift in Sources */,
 				13576BF1213C3D02002C953D /* ContainerViewController.swift in Sources */,
 				13576C03213C9888002C953D /* Extensions.swift in Sources */,
+				13576C092141DD80002C953D /* CarDetailsInternalViewController.swift in Sources */,
 				13576BF5213C3F74002C953D /* ErrorViewController.swift in Sources */,
 				13576BF7213C4012002C953D /* EmptyViewController.swift in Sources */,
 				13576BFF213C418E002C953D /* CarsTableViewController.swift in Sources */,
