@@ -24,6 +24,10 @@ public final class CarsListCoordinator: Coordinator {
     private lazy var carsListViewController = self.createCarsListViewController()
     
     public init() {
+        loadCars()
+    }
+
+    private func loadCars() {
         CarModel.getCars { [carsListViewController] in
             switch $0 {
             case .success(let cars):
@@ -41,12 +45,12 @@ public final class CarsListCoordinator: Coordinator {
     
     private func createCarsListViewController() -> CarsListViewController {
         let carsListViewController = CarsListViewController()
-        carsListViewController.callback = { [callback] in
+        carsListViewController.callback = { [callback, loadCars] in
             switch $0 {
             case .carSelected(let car):
                 callback?(.carSelected(car))
             case .refresh:
-                break
+                loadCars()
             }
         }
         return carsListViewController
