@@ -9,8 +9,13 @@
 import Model
 import View
 
-public final class CarDetailsCoordinator {
-    
+public final class CarDetailsCoordinator: Coordinator {
+
+    public var rootViewController: UIViewController {
+        return carDetailsViewController
+    }
+    public var presentedCoordinator: Coordinator?
+
     private lazy var carDetailsViewController = self.createCarDetailsViewController()
     
     public init() {

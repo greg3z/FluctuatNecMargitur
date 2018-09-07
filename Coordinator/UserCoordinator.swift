@@ -9,7 +9,12 @@
 import Model
 import View
 
-public final class UserCoordinator {
+public final class UserCoordinator: Coordinator {
+
+    public var rootViewController: UIViewController {
+        return userViewController
+    }
+    public var presentedCoordinator: Coordinator?
 
     private lazy var userViewController = self.createUserViewController()
 

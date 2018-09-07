@@ -9,9 +9,14 @@
 import Model
 import View
 
-public final class LoginCoordinator {
+public final class LoginCoordinator: Coordinator {
     
     public var loginSuccessCallback: (() -> Void)?
+
+    public var rootViewController: UIViewController {
+        return loginViewController
+    }
+    public var presentedCoordinator: Coordinator?
     
     private lazy var loginViewController = self.createLoginViewController()
     

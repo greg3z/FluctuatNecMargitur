@@ -9,12 +9,17 @@
 import Model
 import View
 
-public final class CarsListCoordinator {
+public final class CarsListCoordinator: Coordinator {
     
     public enum Callback {
         case carSelected(CarList)
     }
     public var callback: ((Callback) -> Void)?
+
+    public var rootViewController: UIViewController {
+        return carsListViewController
+    }
+    public var presentedCoordinator: Coordinator?
     
     private lazy var carsListViewController = self.createCarsListViewController()
     
