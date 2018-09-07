@@ -11,6 +11,8 @@ import View
 
 public final class LoginCoordinator {
     
+    public var loginSuccessCallback: (() -> Void)?
+    
     private lazy var loginViewController = self.createLoginViewController()
     
     public init() {
@@ -19,8 +21,15 @@ public final class LoginCoordinator {
     
     private func createLoginViewController() -> LoginViewController {
         let loginViewController = LoginViewController()
-        loginViewController.buttonTappedCallback = { _ in
-            
+        loginViewController.buttonTappedCallback = { [loginSuccessCallback] in
+            UserModel.login($0) {
+                switch $0 {
+                case .success:
+                    loginSuccessCallback?()
+                case .error(let error):
+                    loginViewController.setError(error)
+                }
+            }
         }
         return loginViewController
     }

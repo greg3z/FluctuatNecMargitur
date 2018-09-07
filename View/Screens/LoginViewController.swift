@@ -34,5 +34,9 @@ public final class LoginViewController: UIViewController {
     @objc private func buttonTapped() {
         buttonTappedCallback?(textField.text ?? "")
     }
+    
+    public func setError(_ error: String) {
+        textField.text = error
+    }
 
 }
