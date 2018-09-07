@@ -28,6 +28,10 @@
 		13576C0B2141DF21002C953D /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C0A2141DF21002C953D /* CarDetailsViewController.swift */; };
 		13576C0D2141E1DA002C953D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C0C2141E1DA002C953D /* LoginViewController.swift */; };
 		13576C0F2141E2CC002C953D /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C0E2141E2CC002C953D /* UserViewController.swift */; };
+		13CD83E1214204C4001FEE21 /* Coordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CD83DF214204C4001FEE21 /* Coordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13CD83E4214204C4001FEE21 /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; };
+		13CD83E5214204C4001FEE21 /* Coordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13CD83EA214204E7001FEE21 /* CarsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD83E9214204E7001FEE21 /* CarsListCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 13576BE2213C3C83002C953D;
 			remoteInfo = View;
+		};
+		13CD83E2214204C4001FEE21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13576BC1213C3C39002C953D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CD83DC214204C4001FEE21;
+			remoteInfo = Coordinator;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,6 +59,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				13576BEB213C3C83002C953D /* View.framework in Embed Frameworks */,
+				13CD83E5214204C4001FEE21 /* Coordinator.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +90,10 @@
 		13576C0A2141DF21002C953D /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
 		13576C0C2141E1DA002C953D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		13576C0E2141E2CC002C953D /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		13CD83DD214204C4001FEE21 /* Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CD83DF214204C4001FEE21 /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
+		13CD83E0214204C4001FEE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CD83E9214204E7001FEE21 /* CarsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +102,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				13576BEA213C3C83002C953D /* View.framework in Frameworks */,
+				13CD83E4214204C4001FEE21 /* Coordinator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		13576BDF213C3C83002C953D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CD83D9214204C4001FEE21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -104,6 +128,7 @@
 			children = (
 				13576BCB213C3C39002C953D /* FluctuatNecMergitur */,
 				13576BE4213C3C83002C953D /* View */,
+				13CD83DE214204C4001FEE21 /* Coordinator */,
 				13576BCA213C3C39002C953D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +138,7 @@
 			children = (
 				13576BC9213C3C39002C953D /* FluctuatNecMergitur.app */,
 				13576BE3213C3C83002C953D /* View.framework */,
+				13CD83DD214204C4001FEE21 /* Coordinator.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +210,16 @@
 			path = Generic;
 			sourceTree = "<group>";
 		};
+		13CD83DE214204C4001FEE21 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				13CD83DF214204C4001FEE21 /* Coordinator.h */,
+				13CD83E0214204C4001FEE21 /* Info.plist */,
+				13CD83E9214204E7001FEE21 /* CarsListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -192,6 +228,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				13576BE7213C3C83002C953D /* View.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CD83DA214204C4001FEE21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CD83E1214204C4001FEE21 /* Coordinator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +255,7 @@
 			);
 			dependencies = (
 				13576BE9213C3C83002C953D /* PBXTargetDependency */,
+				13CD83E3214204C4001FEE21 /* PBXTargetDependency */,
 			);
 			name = FluctuatNecMergitur;
 			productName = FluctuatNecMergitur;
@@ -235,6 +280,24 @@
 			productReference = 13576BE3213C3C83002C953D /* View.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		13CD83DC214204C4001FEE21 /* Coordinator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CD83E8214204C4001FEE21 /* Build configuration list for PBXNativeTarget "Coordinator" */;
+			buildPhases = (
+				13CD83D8214204C4001FEE21 /* Sources */,
+				13CD83D9214204C4001FEE21 /* Frameworks */,
+				13CD83DA214204C4001FEE21 /* Headers */,
+				13CD83DB214204C4001FEE21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Coordinator;
+			productName = Coordinator;
+			productReference = 13CD83DD214204C4001FEE21 /* Coordinator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -249,6 +312,10 @@
 						CreatedOnToolsVersion = 9.4.1;
 					};
 					13576BE2213C3C83002C953D = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+					13CD83DC214204C4001FEE21 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 0940;
 					};
@@ -269,6 +336,7 @@
 			targets = (
 				13576BC8213C3C39002C953D /* FluctuatNecMergitur */,
 				13576BE2213C3C83002C953D /* View */,
+				13CD83DC214204C4001FEE21 /* Coordinator */,
 			);
 		};
 /* End PBXProject section */
@@ -285,6 +353,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		13576BE1213C3C83002C953D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CD83DB214204C4001FEE21 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,6 +398,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13CD83D8214204C4001FEE21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CD83EA214204E7001FEE21 /* CarsListCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -330,6 +413,11 @@
 			isa = PBXTargetDependency;
 			target = 13576BE2213C3C83002C953D /* View */;
 			targetProxy = 13576BE8213C3C83002C953D /* PBXContainerItemProxy */;
+		};
+		13CD83E3214204C4001FEE21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CD83DC214204C4001FEE21 /* Coordinator */;
+			targetProxy = 13CD83E2214204C4001FEE21 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -560,6 +648,63 @@
 			};
 			name = Release;
 		};
+		13CD83E6214204C4001FEE21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Coordinator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.Coordinator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13CD83E7214204C4001FEE21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Coordinator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.Coordinator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -586,6 +731,15 @@
 			buildConfigurations = (
 				13576BED213C3C83002C953D /* Debug */,
 				13576BEE213C3C83002C953D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13CD83E8214204C4001FEE21 /* Build configuration list for PBXNativeTarget "Coordinator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CD83E6214204C4001FEE21 /* Debug */,
+				13CD83E7214204C4001FEE21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
