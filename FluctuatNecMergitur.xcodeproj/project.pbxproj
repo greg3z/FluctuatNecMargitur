@@ -36,6 +36,8 @@
 		13CD83F721420679001FEE21 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83F021420679001FEE21 /* Model.framework */; };
 		13CD83F821420679001FEE21 /* Model.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83F021420679001FEE21 /* Model.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13CD83FD21420698001FEE21 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD83FC21420698001FEE21 /* CarModel.swift */; };
+		13CD83FF21420A31001FEE21 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83F021420679001FEE21 /* Model.framework */; };
+		13CD840021420A31001FEE21 /* View.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13576BE3213C3C83002C953D /* View.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +136,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CD83FF21420A31001FEE21 /* Model.framework in Frameworks */,
+				13CD840021420A31001FEE21 /* View.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +159,7 @@
 				13CD83DE214204C4001FEE21 /* Coordinator */,
 				13CD83F121420679001FEE21 /* Model */,
 				13576BCA213C3C39002C953D /* Products */,
+				13CD83FE21420A31001FEE21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -254,6 +259,13 @@
 				13CD83FC21420698001FEE21 /* CarModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		13CD83FE21420A31001FEE21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -754,7 +766,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = abc.Coordinator;
+				PRODUCT_BUNDLE_IDENTIFIER = greg3z.Coordinator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -783,7 +795,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = abc.Coordinator;
+				PRODUCT_BUNDLE_IDENTIFIER = greg3z.Coordinator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -811,7 +823,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = abc.Model;
+				PRODUCT_BUNDLE_IDENTIFIER = greg3z.Model;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -840,7 +852,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = abc.Model;
+				PRODUCT_BUNDLE_IDENTIFIER = greg3z.Model;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
