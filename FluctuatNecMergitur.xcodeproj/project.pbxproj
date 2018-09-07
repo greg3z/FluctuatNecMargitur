@@ -30,6 +30,10 @@
 		13576C0F2141E2CC002C953D /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C0E2141E2CC002C953D /* UserViewController.swift */; };
 		1378B8F22143261B002CBA66 /* UserCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B8F12143261B002CBA66 /* UserCoordinator.swift */; };
 		1378B8F4214326BC002CBA66 /* UserInternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B8F3214326BC002CBA66 /* UserInternalViewController.swift */; };
+		1378B8FA214328DC002CBA66 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B8F6214328DC002CBA66 /* NavigationCoordinator.swift */; };
+		1378B8FB214328DC002CBA66 /* WindowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B8F7214328DC002CBA66 /* WindowCoordinator.swift */; };
+		1378B8FC214328DC002CBA66 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B8F8214328DC002CBA66 /* TabBarCoordinator.swift */; };
+		1378B8FD214328DC002CBA66 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B8F9214328DC002CBA66 /* Coordinator.swift */; };
 		13CD83E1214204C4001FEE21 /* Coordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CD83DF214204C4001FEE21 /* Coordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13CD83E4214204C4001FEE21 /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; };
 		13CD83E5214204C4001FEE21 /* Coordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -111,6 +115,10 @@
 		13576C0E2141E2CC002C953D /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		1378B8F12143261B002CBA66 /* UserCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCoordinator.swift; sourceTree = "<group>"; };
 		1378B8F3214326BC002CBA66 /* UserInternalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInternalViewController.swift; sourceTree = "<group>"; };
+		1378B8F6214328DC002CBA66 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		1378B8F7214328DC002CBA66 /* WindowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowCoordinator.swift; sourceTree = "<group>"; };
+		1378B8F8214328DC002CBA66 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		1378B8F9214328DC002CBA66 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		13CD83DD214204C4001FEE21 /* Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CD83DF214204C4001FEE21 /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
 		13CD83E0214204C4001FEE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -252,9 +260,21 @@
 			path = Generic;
 			sourceTree = "<group>";
 		};
+		1378B8F5214328BD002CBA66 /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				1378B8F9214328DC002CBA66 /* Coordinator.swift */,
+				1378B8F6214328DC002CBA66 /* NavigationCoordinator.swift */,
+				1378B8F8214328DC002CBA66 /* TabBarCoordinator.swift */,
+				1378B8F7214328DC002CBA66 /* WindowCoordinator.swift */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
 		13CD83DE214204C4001FEE21 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				1378B8F5214328BD002CBA66 /* Definitions */,
 				13CD83DF214204C4001FEE21 /* Coordinator.h */,
 				13CD83E0214204C4001FEE21 /* Info.plist */,
 				13CD840121420CD1001FEE21 /* CarDetailsCoordinator.swift */,
@@ -505,9 +525,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1378B8FD214328DC002CBA66 /* Coordinator.swift in Sources */,
 				13CD840421420E05001FEE21 /* LoginCoordinator.swift in Sources */,
 				13CD840221420CD1001FEE21 /* CarDetailsCoordinator.swift in Sources */,
+				1378B8FB214328DC002CBA66 /* WindowCoordinator.swift in Sources */,
+				1378B8FC214328DC002CBA66 /* TabBarCoordinator.swift in Sources */,
 				13CD83EA214204E7001FEE21 /* CarsListCoordinator.swift in Sources */,
+				1378B8FA214328DC002CBA66 /* NavigationCoordinator.swift in Sources */,
 				1378B8F22143261B002CBA66 /* UserCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
