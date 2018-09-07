@@ -10,10 +10,11 @@ import UIKit
 
 public final class UserViewController: UIViewController {
 
-    private let name: String
+    private let containerViewController: ContainerViewController
 
-    public init(name: String) {
-        self.name = name
+    public init() {
+        let loadingViewController = LoadingViewController()
+        self.containerViewController = ContainerViewController(contentViewController: loadingViewController)
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -21,11 +22,14 @@ public final class UserViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public override func viewDidLoad() {
-        super.viewDidLoad()
-        let label = UILabel()
-        label.text = name
-        view.addCentered(label)
+    public func setUser(_ userName: String) {
+        let userInternalViewController = UserInternalViewController(name: userName)
+        containerViewController.setViewController(userInternalViewController)
+    }
+
+    public func setError(_ errorMessage: String) {
+        let errorViewController = ErrorViewController(errorMessage: errorMessage)
+        containerViewController.setViewController(errorViewController)
     }
 
 }

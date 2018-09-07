@@ -28,6 +28,8 @@
 		13576C0B2141DF21002C953D /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C0A2141DF21002C953D /* CarDetailsViewController.swift */; };
 		13576C0D2141E1DA002C953D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C0C2141E1DA002C953D /* LoginViewController.swift */; };
 		13576C0F2141E2CC002C953D /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576C0E2141E2CC002C953D /* UserViewController.swift */; };
+		1378B8F22143261B002CBA66 /* UserCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B8F12143261B002CBA66 /* UserCoordinator.swift */; };
+		1378B8F4214326BC002CBA66 /* UserInternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B8F3214326BC002CBA66 /* UserInternalViewController.swift */; };
 		13CD83E1214204C4001FEE21 /* Coordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CD83DF214204C4001FEE21 /* Coordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13CD83E4214204C4001FEE21 /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; };
 		13CD83E5214204C4001FEE21 /* Coordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -107,6 +109,8 @@
 		13576C0A2141DF21002C953D /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
 		13576C0C2141E1DA002C953D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		13576C0E2141E2CC002C953D /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		1378B8F12143261B002CBA66 /* UserCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCoordinator.swift; sourceTree = "<group>"; };
+		1378B8F3214326BC002CBA66 /* UserInternalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInternalViewController.swift; sourceTree = "<group>"; };
 		13CD83DD214204C4001FEE21 /* Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CD83DF214204C4001FEE21 /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
 		13CD83E0214204C4001FEE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 				13576BFD213C416D002C953D /* Generic */,
 				13576C082141DD80002C953D /* CarDetailsInternalViewController.swift */,
 				13576BFE213C418E002C953D /* CarsTableViewController.swift */,
+				1378B8F3214326BC002CBA66 /* UserInternalViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 				13CD840121420CD1001FEE21 /* CarDetailsCoordinator.swift */,
 				13CD83E9214204E7001FEE21 /* CarsListCoordinator.swift */,
 				13CD840321420E05001FEE21 /* LoginCoordinator.swift */,
+				1378B8F12143261B002CBA66 /* UserCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -488,6 +494,7 @@
 				13576C03213C9888002C953D /* Extensions.swift in Sources */,
 				13576C092141DD80002C953D /* CarDetailsInternalViewController.swift in Sources */,
 				13576BF5213C3F74002C953D /* ErrorViewController.swift in Sources */,
+				1378B8F4214326BC002CBA66 /* UserInternalViewController.swift in Sources */,
 				13576BF7213C4012002C953D /* EmptyViewController.swift in Sources */,
 				13576BFF213C418E002C953D /* CarsTableViewController.swift in Sources */,
 				13576BF3213C3EE1002C953D /* LoadingViewController.swift in Sources */,
@@ -501,6 +508,7 @@
 				13CD840421420E05001FEE21 /* LoginCoordinator.swift in Sources */,
 				13CD840221420CD1001FEE21 /* CarDetailsCoordinator.swift in Sources */,
 				13CD83EA214204E7001FEE21 /* CarsListCoordinator.swift in Sources */,
+				1378B8F22143261B002CBA66 /* UserCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
