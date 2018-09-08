@@ -33,6 +33,7 @@
 		1378B8FC214328DC002CBA66 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B8F8214328DC002CBA66 /* TabBarCoordinator.swift */; };
 		1378B8FD214328DC002CBA66 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B8F9214328DC002CBA66 /* Coordinator.swift */; };
 		1378B8FF21432E82002CBA66 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B8FE21432E82002CBA66 /* Router.swift */; };
+		1378B90121441E34002CBA66 /* TextButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B90021441E34002CBA66 /* TextButtonViewController.swift */; };
 		13CD83E1214204C4001FEE21 /* Coordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CD83DF214204C4001FEE21 /* Coordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13CD83E4214204C4001FEE21 /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; };
 		13CD83E5214204C4001FEE21 /* Coordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -117,6 +118,7 @@
 		1378B8F8214328DC002CBA66 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		1378B8F9214328DC002CBA66 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		1378B8FE21432E82002CBA66 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		1378B90021441E34002CBA66 /* TextButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonViewController.swift; sourceTree = "<group>"; };
 		13CD83DD214204C4001FEE21 /* Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CD83DF214204C4001FEE21 /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
 		13CD83E0214204C4001FEE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				13576BF6213C4012002C953D /* EmptyViewController.swift */,
 				13576BF4213C3F74002C953D /* ErrorViewController.swift */,
 				13576BF2213C3EE1002C953D /* LoadingViewController.swift */,
+				1378B90021441E34002CBA66 /* TextButtonViewController.swift */,
 			);
 			path = Generic;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				13576BF1213C3D02002C953D /* ContainerViewController.swift in Sources */,
 				13576C03213C9888002C953D /* Extensions.swift in Sources */,
 				13576C092141DD80002C953D /* CarDetailsInternalViewController.swift in Sources */,
+				1378B90121441E34002CBA66 /* TextButtonViewController.swift in Sources */,
 				13576BF5213C3F74002C953D /* ErrorViewController.swift in Sources */,
 				1378B8F4214326BC002CBA66 /* UserInternalViewController.swift in Sources */,
 				13576BF7213C4012002C953D /* EmptyViewController.swift in Sources */,
