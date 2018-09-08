@@ -22,6 +22,11 @@ public final class UserViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        add(child: containerViewController)
+    }
+
     public func setUser(_ userName: String) {
         let userInternalViewController = UserInternalViewController(name: userName)
         containerViewController.setViewController(userInternalViewController)
