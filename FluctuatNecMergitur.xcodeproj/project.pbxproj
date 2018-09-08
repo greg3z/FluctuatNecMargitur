@@ -33,6 +33,8 @@
 		1378B8FD214328DC002CBA66 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B8F9214328DC002CBA66 /* Coordinator.swift */; };
 		1378B8FF21432E82002CBA66 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B8FE21432E82002CBA66 /* Router.swift */; };
 		1378B90121441E34002CBA66 /* TextButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B90021441E34002CBA66 /* TextButtonViewController.swift */; };
+		1378B903214426B8002CBA66 /* LoadingErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B902214426B8002CBA66 /* LoadingErrorViewController.swift */; };
+		1378B905214426F3002CBA66 /* LoadingErrorEmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B904214426F3002CBA66 /* LoadingErrorEmptyViewController.swift */; };
 		13CD83E1214204C4001FEE21 /* Coordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CD83DF214204C4001FEE21 /* Coordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13CD83E4214204C4001FEE21 /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; };
 		13CD83E5214204C4001FEE21 /* Coordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -117,6 +119,8 @@
 		1378B8F9214328DC002CBA66 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		1378B8FE21432E82002CBA66 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		1378B90021441E34002CBA66 /* TextButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonViewController.swift; sourceTree = "<group>"; };
+		1378B902214426B8002CBA66 /* LoadingErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingErrorViewController.swift; sourceTree = "<group>"; };
+		1378B904214426F3002CBA66 /* LoadingErrorEmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingErrorEmptyViewController.swift; sourceTree = "<group>"; };
 		13CD83DD214204C4001FEE21 /* Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CD83DF214204C4001FEE21 /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
 		13CD83E0214204C4001FEE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -251,6 +255,8 @@
 				13576BF0213C3D02002C953D /* ContainerViewController.swift */,
 				13576BF6213C4012002C953D /* EmptyViewController.swift */,
 				13576BF4213C3F74002C953D /* ErrorViewController.swift */,
+				1378B904214426F3002CBA66 /* LoadingErrorEmptyViewController.swift */,
+				1378B902214426B8002CBA66 /* LoadingErrorViewController.swift */,
 				13576BF2213C3EE1002C953D /* LoadingViewController.swift */,
 				1378B90021441E34002CBA66 /* TextButtonViewController.swift */,
 			);
@@ -504,7 +510,9 @@
 				13576C072141DD01002C953D /* CarDetails.swift in Sources */,
 				13576C0F2141E2CC002C953D /* UserViewController.swift in Sources */,
 				13576C0B2141DF21002C953D /* CarDetailsViewController.swift in Sources */,
+				1378B903214426B8002CBA66 /* LoadingErrorViewController.swift in Sources */,
 				13576C01213C9821002C953D /* CarsListViewController.swift in Sources */,
+				1378B905214426F3002CBA66 /* LoadingErrorEmptyViewController.swift in Sources */,
 				13576BFC213C40FD002C953D /* CarList.swift in Sources */,
 				13576BF1213C3D02002C953D /* ContainerViewController.swift in Sources */,
 				13576C03213C9888002C953D /* Extensions.swift in Sources */,
