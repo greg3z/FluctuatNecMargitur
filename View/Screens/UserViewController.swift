@@ -28,8 +28,8 @@ public final class UserViewController: UIViewController {
     }
 
     public func setUser(_ userName: String) {
-        let userInternalViewController = UserInternalViewController(name: userName)
-        containerViewController.setViewController(userInternalViewController)
+        let textButtonViewController = TextButtonViewController(text: userName, buttonText: "Logout")
+        containerViewController.setViewController(textButtonViewController)
     }
 
     public func setError(_ errorMessage: String) {

@@ -13,10 +13,12 @@ public final class TextButtonViewController: UIViewController {
     public var buttonTapped: (() -> Void)?
 
     private let text: String
+    private let textColor: UIColor
     private let buttonText: String
 
-    public init(text: String, buttonText: String) {
+    public init(text: String, textColor: UIColor = .black, buttonText: String) {
         self.text = text
+        self.textColor = textColor
         self.buttonText = buttonText
         super.init(nibName: nil, bundle: nil)
     }
@@ -29,11 +31,16 @@ public final class TextButtonViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         let label = UILabel()
+        label.textColor = textColor
+        label.textAlignment = .center
         label.text = text
         let button = UIButton()
         button.addTarget(self, action: #selector(buttonTappedAction), for: .touchUpInside)
+        button.setTitle(buttonText, for: .normal)
+        button.setTitleColor(.blue, for: .normal)
         let stackView = UIStackView(arrangedSubviews: [label, button])
         stackView.axis = .vertical
+        stackView.spacing = 50
         view.addCentered(stackView)
     }
 
