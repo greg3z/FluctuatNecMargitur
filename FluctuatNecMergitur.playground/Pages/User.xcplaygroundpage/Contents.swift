@@ -1,7 +1,9 @@
-//: [Previous](@previous)
+import PlaygroundSupport
+import View
 
-import Foundation
+let userViewController = UserViewController()
 
-var str = "Hello, playground"
+userViewController.setUser("Greg")
 
-//: [Next](@next)
+PlaygroundPage.current.liveView = userViewController
+

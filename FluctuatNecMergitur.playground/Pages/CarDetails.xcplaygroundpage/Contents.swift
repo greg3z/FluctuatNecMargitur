@@ -1,5 +1,11 @@
-//: Playground - noun: a place where people can play
+import PlaygroundSupport
+import View
 
-import UIKit
+let carDetails = CarDetails(brand: "Ferrari", model: "F40", power: "600ch")
 
-var str = "Hello, playground"
+let carDetailsViewController = CarDetailsViewController()
+
+//carDetailsViewController.setCar(carDetails)
+//carDetailsViewController.setError("Car not found")
+
+PlaygroundPage.current.liveView = carDetailsViewController

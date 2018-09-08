@@ -1,7 +1,9 @@
-//: [Previous](@previous)
+import PlaygroundSupport
+import View
 
-import Foundation
+let loginViewController = LoginViewController()
 
-var str = "Hello, playground"
+loginViewController.buttonTappedCallback = { print($0) }
 
-//: [Next](@next)
+PlaygroundPage.current.liveView = loginViewController
+

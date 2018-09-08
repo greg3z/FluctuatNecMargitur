@@ -24,6 +24,7 @@ internal final class LoadingViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         view.addCentered(activityIndicatorView)
+        activityIndicatorView.startAnimating()
     }
 
 }

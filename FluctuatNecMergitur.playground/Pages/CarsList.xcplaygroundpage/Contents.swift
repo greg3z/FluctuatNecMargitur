@@ -1,7 +1,17 @@
-//: [Previous](@previous)
+import PlaygroundSupport
+import View
 
-import Foundation
+let car1 = CarList(brand: "Porsche", model: "911")
+let car2 = CarList(brand: "Audi", model: "RS3")
+let car3 = CarList(brand: "Mercedes", model: "C63S AMG")
 
-var str = "Hello, playground"
+let cars = [car1, car2, car3]
 
-//: [Next](@next)
+let carsListViewController = CarsListViewController()
+
+//carsListViewController.setCars(cars)
+//carsListViewController.setError("Request failed!")
+//carsListViewController.setEmpty("No cars")
+
+PlaygroundPage.current.liveView = carsListViewController
+
