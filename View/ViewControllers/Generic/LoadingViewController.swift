@@ -22,6 +22,7 @@ internal final class LoadingViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         view.addCentered(activityIndicatorView)
     }
 

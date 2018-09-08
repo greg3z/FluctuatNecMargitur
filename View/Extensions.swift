@@ -11,7 +11,7 @@ import UIKit
 internal extension UIView {
 
     internal func addCentered(_ view: UIView) {
-        view.translatesAutoresizingMaskIntoConstraints = true
+        view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         NSLayoutConstraint.activate([
             view.centerXAnchor.constraint(equalTo: centerXAnchor),

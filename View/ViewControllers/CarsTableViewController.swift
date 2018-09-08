@@ -29,6 +29,7 @@ internal final class CarsTableViewController: UITableViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         tableView.tableFooterView = UIView()
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(didPullToRefresh), for: .valueChanged)

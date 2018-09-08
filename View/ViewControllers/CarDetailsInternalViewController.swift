@@ -23,6 +23,7 @@ internal final class CarDetailsInternalViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         let label1 = UILabel()
         label1.text = carDetails.brand
         let label2 = UILabel()

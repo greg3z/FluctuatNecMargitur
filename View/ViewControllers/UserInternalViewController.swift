@@ -23,6 +23,7 @@ public final class UserInternalViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         let label = UILabel()
         label.text = name
         view.addCentered(label)
