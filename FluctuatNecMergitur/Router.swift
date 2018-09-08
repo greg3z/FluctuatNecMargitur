@@ -19,17 +19,7 @@ public final class Router {
     }
 
     public func start() {
-        let tabBarCoordinator = TabBarCoordinator()
-        let carsNavigationCoordinator = NavigationCoordinator()
-        let carsListCoordinator = createCarsListCoordinator(navigationCoordinator: carsNavigationCoordinator)
-        carsNavigationCoordinator.setRootCoordinator(carsListCoordinator)
-        let profileCoordinator: Coordinator
-        if isLoggedIn() {
-            profileCoordinator = createUserCoordinator()
-        } else {
-            profileCoordinator = createLoginCoordinator()
-        }
-        tabBarCoordinator.setCoordinators([carsNavigationCoordinator, profileCoordinator])
+        let tabBarCoordinator = createTabBarCoordinator()
         windowCoordinator.set(tabBarCoordinator)
     }
 
@@ -37,7 +27,39 @@ public final class Router {
         return true
     }
 
-    private func createCarsListCoordinator(navigationCoordinator: NavigationCoordinator) -> CarsListCoordinator {
+}
+
+private extension Router {
+
+    private func createCarsNavigationCoordinator() -> Coordinator {
+        let carsNavigationCoordinator = NavigationCoordinator()
+        let carsListCoordinator = createCarsListCoordinator(navigationCoordinator: carsNavigationCoordinator)
+        carsListCoordinator.setNavBarTitle("Cars")
+        carsNavigationCoordinator.setRootCoordinator(carsListCoordinator)
+        return carsNavigationCoordinator
+    }
+
+    private func createProfileCoordinator() -> Coordinator {
+        let profileCoordinator: Coordinator
+        if isLoggedIn() {
+            profileCoordinator = createUserCoordinator()
+        } else {
+            profileCoordinator = createLoginCoordinator()
+        }
+        return profileCoordinator
+    }
+
+    private func createTabBarCoordinator() -> Coordinator {
+        let tabBarCoordinator = TabBarCoordinator()
+        let carsNavigationCoordinator = createCarsNavigationCoordinator()
+        carsNavigationCoordinator.setTabBarTitle("Cars")
+        let profileCoordinator = createProfileCoordinator()
+        profileCoordinator.setTabBarTitle("Profile")
+        tabBarCoordinator.setCoordinators([carsNavigationCoordinator, profileCoordinator])
+        return tabBarCoordinator
+    }
+
+    private func createCarsListCoordinator(navigationCoordinator: NavigationCoordinator) -> Coordinator {
         let carsListCoordinator = CarsListCoordinator()
         carsListCoordinator.callback = { [createCarDetailsCoordinator] in
             switch $0 {
@@ -49,12 +71,12 @@ public final class Router {
         return carsListCoordinator
     }
 
-    private func createCarDetailsCoordinator(car: CarList) -> CarDetailsCoordinator {
+    private func createCarDetailsCoordinator(car: CarList) -> Coordinator {
         let carDetailsCoordinator = CarDetailsCoordinator()
         return carDetailsCoordinator
     }
 
-    private func createLoginCoordinator() -> LoginCoordinator {
+    private func createLoginCoordinator() -> Coordinator {
         let loginCoordinator = LoginCoordinator()
         loginCoordinator.loginSuccessCallback = {
 
@@ -62,7 +84,7 @@ public final class Router {
         return loginCoordinator
     }
 
-    private func createUserCoordinator() -> UserCoordinator {
+    private func createUserCoordinator() -> Coordinator {
         let userCoordinator = UserCoordinator()
         return userCoordinator
     }

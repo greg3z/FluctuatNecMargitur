@@ -24,4 +24,12 @@ extension Coordinator {
         }
     }
 
+    public func setNavBarTitle(_ title: String) {
+        rootViewController.title = title
+    }
+
+    public func setTabBarTitle(_ title: String) {
+        rootViewController.tabBarItem.title = title
+    }
+
 }
