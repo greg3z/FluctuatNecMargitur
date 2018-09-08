@@ -27,8 +27,8 @@ public class LoadingErrorViewController: UIViewController {
     }
 
     public func setError(_ errorMessage: String) {
-        let errorViewController = ErrorViewController(errorMessage: errorMessage)
-        containerViewController.setViewController(errorViewController)
+        let textButtonViewController = TextButtonViewController(text: errorMessage, textColor: .red, buttonText: "Retry")
+        containerViewController.setViewController(textButtonViewController)
     }
 
 }

@@ -15,7 +15,6 @@
 		13576BEB213C3C83002C953D /* View.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13576BE3213C3C83002C953D /* View.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13576BF1213C3D02002C953D /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF0213C3D02002C953D /* ContainerViewController.swift */; };
 		13576BF3213C3EE1002C953D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF2213C3EE1002C953D /* LoadingViewController.swift */; };
-		13576BF5213C3F74002C953D /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF4213C3F74002C953D /* ErrorViewController.swift */; };
 		13576BF7213C4012002C953D /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BF6213C4012002C953D /* EmptyViewController.swift */; };
 		13576BFC213C40FD002C953D /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BFB213C40FD002C953D /* CarList.swift */; };
 		13576BFF213C418E002C953D /* CarsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13576BFE213C418E002C953D /* CarsTableViewController.swift */; };
@@ -101,7 +100,6 @@
 		13576BE6213C3C83002C953D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13576BF0213C3D02002C953D /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		13576BF2213C3EE1002C953D /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
-		13576BF4213C3F74002C953D /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		13576BF6213C4012002C953D /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		13576BFB213C40FD002C953D /* CarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarList.swift; sourceTree = "<group>"; };
 		13576BFE213C418E002C953D /* CarsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewController.swift; sourceTree = "<group>"; };
@@ -254,7 +252,6 @@
 			children = (
 				13576BF0213C3D02002C953D /* ContainerViewController.swift */,
 				13576BF6213C4012002C953D /* EmptyViewController.swift */,
-				13576BF4213C3F74002C953D /* ErrorViewController.swift */,
 				1378B904214426F3002CBA66 /* LoadingErrorEmptyViewController.swift */,
 				1378B902214426B8002CBA66 /* LoadingErrorViewController.swift */,
 				13576BF2213C3EE1002C953D /* LoadingViewController.swift */,
@@ -518,7 +515,6 @@
 				13576C03213C9888002C953D /* Extensions.swift in Sources */,
 				13576C092141DD80002C953D /* CarDetailsInternalViewController.swift in Sources */,
 				1378B90121441E34002CBA66 /* TextButtonViewController.swift in Sources */,
-				13576BF5213C3F74002C953D /* ErrorViewController.swift in Sources */,
 				13576BF7213C4012002C953D /* EmptyViewController.swift in Sources */,
 				13576BFF213C418E002C953D /* CarsTableViewController.swift in Sources */,
 				13576BF3213C3EE1002C953D /* LoadingViewController.swift in Sources */,
