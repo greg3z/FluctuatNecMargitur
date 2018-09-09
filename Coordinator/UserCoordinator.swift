@@ -19,6 +19,10 @@ public final class UserCoordinator: Coordinator {
     private lazy var userViewController = self.createUserViewController()
 
     public init() {
+        loadUser()
+    }
+
+    private func loadUser() {
         UserModel.getUser { [userViewController] in
             switch $0 {
             case .success(let user):
@@ -31,6 +35,10 @@ public final class UserCoordinator: Coordinator {
 
     private func createUserViewController() -> UserViewController {
         let userViewController = UserViewController()
+        userViewController.reloadCallback = { [loadUser] in
+            userViewController.setLoading()
+            loadUser()
+        }
         return userViewController
     }
 
