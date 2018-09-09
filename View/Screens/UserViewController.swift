@@ -10,12 +10,16 @@ import UIKit
 
 public final class UserViewController: LoadingErrorViewController {
 
-    public var reloadCallback: (() -> Void)?
+    public enum Callback {
+        case reload
+        case logout
+    }
+    public var callback: ((Callback) -> Void)?
 
     public override init() {
         super.init()
         retryButtonTapped = { [weak self] in
-            self?.reloadCallback?()
+            self?.callback?(.reload)
         }
     }
     
@@ -25,6 +29,9 @@ public final class UserViewController: LoadingErrorViewController {
     
     public func setUser(_ userName: String) {
         let textButtonViewController = TextButtonViewController(text: userName, buttonText: "Logout")
+        textButtonViewController.buttonTapped = { [callback] in
+            callback?(.logout)
+        }
         containerViewController.setViewController(textButtonViewController)
     }
 

@@ -12,6 +12,7 @@ import View
 public final class Router {
 
     private let windowCoordinator: WindowCoordinator
+    private var tabBarCoordinator: TabBarCoordinator?
 
     public init(windowCoordinator: WindowCoordinator) {
         self.windowCoordinator = windowCoordinator
@@ -56,6 +57,7 @@ private extension Router {
         let profileCoordinator = createProfileCoordinator()
         profileCoordinator.setTabBarTitle("Profile")
         tabBarCoordinator.setCoordinators([carsNavigationCoordinator, profileCoordinator])
+        self.tabBarCoordinator = tabBarCoordinator
         return tabBarCoordinator
     }
 
@@ -86,6 +88,11 @@ private extension Router {
 
     private func createUserCoordinator() -> Coordinator {
         let userCoordinator = UserCoordinator()
+        userCoordinator.logoutCallback = { [createLoginCoordinator, weak self] in
+            let loginCoordinator = createLoginCoordinator()
+            loginCoordinator.setTabBarTitle("Profile")
+            self?.tabBarCoordinator?.replaceCoordinator(at: 1, by: loginCoordinator)
+        }
         return userCoordinator
     }
 

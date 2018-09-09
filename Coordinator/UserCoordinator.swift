@@ -11,6 +11,7 @@ import View
 
 public final class UserCoordinator: Coordinator {
 
+    public var logoutCallback: (() -> Void)?
     public var rootViewController: UIViewController {
         return userViewController
     }
@@ -35,9 +36,14 @@ public final class UserCoordinator: Coordinator {
 
     private func createUserViewController() -> UserViewController {
         let userViewController = UserViewController()
-        userViewController.reloadCallback = { [loadUser] in
-            userViewController.setLoading()
-            loadUser()
+        userViewController.callback = { [weak self, loadUser] in
+            switch $0 {
+            case .reload:
+                userViewController.setLoading()
+                loadUser()
+            case .logout:
+                self?.logoutCallback?()
+            }
         }
         return userViewController
     }
