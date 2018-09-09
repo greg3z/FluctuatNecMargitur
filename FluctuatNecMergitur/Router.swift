@@ -80,8 +80,10 @@ private extension Router {
 
     private func createLoginCoordinator() -> Coordinator {
         let loginCoordinator = LoginCoordinator()
-        loginCoordinator.loginSuccessCallback = {
-
+        loginCoordinator.loginSuccessCallback = { [createUserCoordinator, weak self] in
+            let userCoordinator = createUserCoordinator()
+            userCoordinator.setTabBarTitle("Profile")
+            self?.tabBarCoordinator?.replaceCoordinator(at: 1, by: userCoordinator)
         }
         return loginCoordinator
     }

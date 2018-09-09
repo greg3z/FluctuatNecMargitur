@@ -19,8 +19,8 @@ public struct User {
 public struct UserModel {
     
     public static func login(_ user: String, callback: @escaping (Result<User>) -> Void) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            if arc4random_uniform(2) == 0 {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            if arc4random_uniform(10) == 0 {
                 callback(.error("Login failed!"))
             } else {
                 let user = User(name: "Greg")
@@ -30,8 +30,8 @@ public struct UserModel {
     }
     
     public static func getUser(_ callback: @escaping (Result<User>) -> Void) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            if arc4random_uniform(2) == 0 {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            if arc4random_uniform(10) == 0 {
                 callback(.error("Request failed!"))
             } else {
                 let user = User(name: "Greg")
