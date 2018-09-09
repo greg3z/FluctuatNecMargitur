@@ -35,6 +35,7 @@
 		13A6193221457631001F5192 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6193121457631001F5192 /* StartViewController.swift */; };
 		13A61934214576BD001F5192 /* StartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A61933214576BD001F5192 /* StartCoordinator.swift */; };
 		13A619362145A13B001F5192 /* LogoutConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A619352145A13B001F5192 /* LogoutConfirmationViewController.swift */; };
+		13A619382145A3AE001F5192 /* LogoutConfirmationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A619372145A3AE001F5192 /* LogoutConfirmationCoordinator.swift */; };
 		13CD83E1214204C4001FEE21 /* Coordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CD83DF214204C4001FEE21 /* Coordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13CD83E4214204C4001FEE21 /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; };
 		13CD83E5214204C4001FEE21 /* Coordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -121,6 +122,7 @@
 		13A6193121457631001F5192 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		13A61933214576BD001F5192 /* StartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCoordinator.swift; sourceTree = "<group>"; };
 		13A619352145A13B001F5192 /* LogoutConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutConfirmationViewController.swift; sourceTree = "<group>"; };
+		13A619372145A3AE001F5192 /* LogoutConfirmationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutConfirmationCoordinator.swift; sourceTree = "<group>"; };
 		13CD83DD214204C4001FEE21 /* Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CD83DF214204C4001FEE21 /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
 		13CD83E0214204C4001FEE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				13CD840121420CD1001FEE21 /* CarDetailsCoordinator.swift */,
 				13CD83E9214204E7001FEE21 /* CarsListCoordinator.swift */,
 				13CD840321420E05001FEE21 /* LoginCoordinator.swift */,
+				13A619372145A3AE001F5192 /* LogoutConfirmationCoordinator.swift */,
 				13A61933214576BD001F5192 /* StartCoordinator.swift */,
 				1378B8F12143261B002CBA66 /* UserCoordinator.swift */,
 			);
@@ -529,6 +532,7 @@
 				1378B8FA214328DC002CBA66 /* NavigationCoordinator.swift in Sources */,
 				13A61934214576BD001F5192 /* StartCoordinator.swift in Sources */,
 				1378B8F22143261B002CBA66 /* UserCoordinator.swift in Sources */,
+				13A619382145A3AE001F5192 /* LogoutConfirmationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
