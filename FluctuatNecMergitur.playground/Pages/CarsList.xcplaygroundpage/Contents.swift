@@ -9,7 +9,7 @@ let cars = [car1, car2, car3]
 
 let carsListViewController = CarsListViewController()
 
-//carsListViewController.setCars(cars)
+carsListViewController.setCars(cars)
 //carsListViewController.setError("Request failed!")
 //carsListViewController.setEmpty("No cars")
 
