@@ -34,6 +34,7 @@
 		1378B905214426F3002CBA66 /* LoadingErrorEmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378B904214426F3002CBA66 /* LoadingErrorEmptyViewController.swift */; };
 		13A6193221457631001F5192 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6193121457631001F5192 /* StartViewController.swift */; };
 		13A61934214576BD001F5192 /* StartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A61933214576BD001F5192 /* StartCoordinator.swift */; };
+		13A619362145A13B001F5192 /* LogoutConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A619352145A13B001F5192 /* LogoutConfirmationViewController.swift */; };
 		13CD83E1214204C4001FEE21 /* Coordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CD83DF214204C4001FEE21 /* Coordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13CD83E4214204C4001FEE21 /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; };
 		13CD83E5214204C4001FEE21 /* Coordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -119,6 +120,7 @@
 		1378B904214426F3002CBA66 /* LoadingErrorEmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingErrorEmptyViewController.swift; sourceTree = "<group>"; };
 		13A6193121457631001F5192 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		13A61933214576BD001F5192 /* StartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCoordinator.swift; sourceTree = "<group>"; };
+		13A619352145A13B001F5192 /* LogoutConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutConfirmationViewController.swift; sourceTree = "<group>"; };
 		13CD83DD214204C4001FEE21 /* Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CD83DF214204C4001FEE21 /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
 		13CD83E0214204C4001FEE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				13576C0A2141DF21002C953D /* CarDetailsViewController.swift */,
 				13576C00213C9821002C953D /* CarsListViewController.swift */,
 				13576C0C2141E1DA002C953D /* LoginViewController.swift */,
+				13A619352145A13B001F5192 /* LogoutConfirmationViewController.swift */,
 				13A6193121457631001F5192 /* StartViewController.swift */,
 				13576C0E2141E2CC002C953D /* UserViewController.swift */,
 			);
@@ -502,6 +505,7 @@
 				1378B903214426B8002CBA66 /* LoadingErrorViewController.swift in Sources */,
 				13576C01213C9821002C953D /* CarsListViewController.swift in Sources */,
 				1378B905214426F3002CBA66 /* LoadingErrorEmptyViewController.swift in Sources */,
+				13A619362145A13B001F5192 /* LogoutConfirmationViewController.swift in Sources */,
 				13576BF1213C3D02002C953D /* ContainerViewController.swift in Sources */,
 				13576C03213C9888002C953D /* Extensions.swift in Sources */,
 				13576C092141DD80002C953D /* CarDetailsInternalViewController.swift in Sources */,
