@@ -11,6 +11,7 @@ import UIKit
 public class LoadingErrorViewController: UIViewController {
 
     internal let containerViewController: ContainerViewController
+    internal var retryButtonTapped: (() -> Void)?
 
     public init() {
         self.containerViewController = ContainerViewController(contentViewController: LoadingViewController())
@@ -28,7 +29,15 @@ public class LoadingErrorViewController: UIViewController {
 
     public func setError(_ errorMessage: String) {
         let textButtonViewController = TextButtonViewController(text: errorMessage, textColor: .red, buttonText: "Retry")
+        textButtonViewController.buttonTapped = { [retryButtonTapped] in
+            retryButtonTapped?()
+        }
         containerViewController.setViewController(textButtonViewController)
+    }
+
+    public func setLoading() {
+        let loadingViewController = LoadingViewController()
+        containerViewController.setViewController(loadingViewController)
     }
 
 }

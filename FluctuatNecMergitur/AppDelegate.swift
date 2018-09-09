@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow()
         let windowCoordinator = WindowCoordinator(window: window)
         router = Router(windowCoordinator: windowCoordinator)
-        router?.start()
         window.makeKeyAndVisible()
         self.window = window
         return true
