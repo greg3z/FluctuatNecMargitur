@@ -68,11 +68,11 @@ private extension Router {
 
     private func createCarsListCoordinator(navigationCoordinator: NavigationCoordinator) -> Coordinator {
         let carsListCoordinator = CarsListCoordinator()
-        carsListCoordinator.callback = { [createCarDetailsCoordinator] in
+        carsListCoordinator.callback = { [createCarDetailsCoordinator, weak navigationCoordinator] in
             switch $0 {
             case .carSelected(let car):
                 let carDetailsCoordinator = createCarDetailsCoordinator(car)
-                navigationCoordinator.push(carDetailsCoordinator)
+                navigationCoordinator?.push(carDetailsCoordinator)
             }
         }
         return carsListCoordinator
@@ -95,9 +95,10 @@ private extension Router {
 
     private func createUserCoordinator() -> Coordinator {
         let userCoordinator = UserCoordinator()
-        userCoordinator.logoutCallback = { [createStartCoordinator, windowCoordinator] in
+        userCoordinator.logoutCallback = { [createStartCoordinator, windowCoordinator, weak self] in
             let startCoordinator = createStartCoordinator()
             windowCoordinator.set(startCoordinator)
+            self?.tabBarCoordinator = nil
         }
         return userCoordinator
     }
