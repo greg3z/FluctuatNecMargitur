@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class TextButtonViewController: UIViewController {
+public class TextButtonViewController: UIViewController {
 
     public var buttonTapped: (() -> Void)?
 
