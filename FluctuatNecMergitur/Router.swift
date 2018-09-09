@@ -20,12 +20,17 @@ public final class Router {
     }
 
     public func start() {
-        let tabBarCoordinator = createTabBarCoordinator()
-        windowCoordinator.set(tabBarCoordinator)
+        if isLoggedIn() {
+            let tabBarCoordinator = createTabBarCoordinator()
+            windowCoordinator.set(tabBarCoordinator)
+        } else {
+            let startCoordinator = createStartCoordinator()
+            windowCoordinator.set(startCoordinator)
+        }
     }
 
     private func isLoggedIn() -> Bool {
-        return true
+        return false
     }
 
 }
@@ -90,12 +95,20 @@ private extension Router {
 
     private func createUserCoordinator() -> Coordinator {
         let userCoordinator = UserCoordinator()
-        userCoordinator.logoutCallback = { [createLoginCoordinator, weak self] in
-            let loginCoordinator = createLoginCoordinator()
-            loginCoordinator.setTabBarTitle("Profile")
-            self?.tabBarCoordinator?.replaceCoordinator(at: 1, by: loginCoordinator)
+        userCoordinator.logoutCallback = { [createStartCoordinator, windowCoordinator] in
+            let startCoordinator = createStartCoordinator()
+            windowCoordinator.set(startCoordinator)
         }
         return userCoordinator
+    }
+
+    private func createStartCoordinator() -> Coordinator {
+        let startCoordinator = StartCoordinator()
+        startCoordinator.startCallback = { [createTabBarCoordinator, windowCoordinator] in
+            let tabBarCoordinator = createTabBarCoordinator()
+            windowCoordinator.set(tabBarCoordinator)
+        }
+        return startCoordinator
     }
 
 }
