@@ -5,6 +5,8 @@
 //  Copyright © 2017 Liquidsoul. All rights reserved.
 //
 
+import View
+
 public protocol Coordinator: class {
     var rootViewController: UIViewController { get }
     var presentedCoordinator: Coordinator? { get set }
@@ -30,6 +32,12 @@ extension Coordinator {
 
     public func setTabBarTitle(_ title: String) {
         rootViewController.tabBarItem.title = title
+    }
+
+    public func setDismissButton() {
+        rootViewController.navigationItem.leftBarButtonItem = ClosureBarButtonItem(barButtonSystemItem: .cancel) { [weak rootViewController] in
+            rootViewController?.dismiss(animated: true)
+        }
     }
 
 }

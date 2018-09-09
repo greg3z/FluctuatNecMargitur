@@ -36,6 +36,7 @@
 		13A61934214576BD001F5192 /* StartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A61933214576BD001F5192 /* StartCoordinator.swift */; };
 		13A619362145A13B001F5192 /* LogoutConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A619352145A13B001F5192 /* LogoutConfirmationViewController.swift */; };
 		13A619382145A3AE001F5192 /* LogoutConfirmationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A619372145A3AE001F5192 /* LogoutConfirmationCoordinator.swift */; };
+		13A6193D2145AB02001F5192 /* ClosureBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6193C2145AA0D001F5192 /* ClosureBarButtonItem.swift */; };
 		13CD83E1214204C4001FEE21 /* Coordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CD83DF214204C4001FEE21 /* Coordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13CD83E4214204C4001FEE21 /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; };
 		13CD83E5214204C4001FEE21 /* Coordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CD83DD214204C4001FEE21 /* Coordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -123,6 +124,7 @@
 		13A61933214576BD001F5192 /* StartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCoordinator.swift; sourceTree = "<group>"; };
 		13A619352145A13B001F5192 /* LogoutConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutConfirmationViewController.swift; sourceTree = "<group>"; };
 		13A619372145A3AE001F5192 /* LogoutConfirmationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutConfirmationCoordinator.swift; sourceTree = "<group>"; };
+		13A6193C2145AA0D001F5192 /* ClosureBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureBarButtonItem.swift; sourceTree = "<group>"; };
 		13CD83DD214204C4001FEE21 /* Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CD83DF214204C4001FEE21 /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
 		13CD83E0214204C4001FEE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -214,8 +216,8 @@
 				13576BE5213C3C83002C953D /* View.h */,
 				13576BE6213C3C83002C953D /* Info.plist */,
 				13576BFA213C407E002C953D /* Screens */,
+				13A6193B2145AA04001F5192 /* Tools */,
 				13576BF8213C405F002C953D /* ViewControllers */,
-				13576C02213C9888002C953D /* Extensions.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,6 +267,15 @@
 				1378B8F7214328DC002CBA66 /* WindowCoordinator.swift */,
 			);
 			path = Definitions;
+			sourceTree = "<group>";
+		};
+		13A6193B2145AA04001F5192 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				13A6193C2145AA0D001F5192 /* ClosureBarButtonItem.swift */,
+				13576C02213C9888002C953D /* Extensions.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		13CD83DE214204C4001FEE21 /* Coordinator */ = {
@@ -503,6 +514,7 @@
 			files = (
 				13576C0D2141E1DA002C953D /* LoginViewController.swift in Sources */,
 				13A6193221457631001F5192 /* StartViewController.swift in Sources */,
+				13A6193D2145AB02001F5192 /* ClosureBarButtonItem.swift in Sources */,
 				13576C0F2141E2CC002C953D /* UserViewController.swift in Sources */,
 				13576C0B2141DF21002C953D /* CarDetailsViewController.swift in Sources */,
 				1378B903214426B8002CBA66 /* LoadingErrorViewController.swift in Sources */,
