@@ -36,11 +36,11 @@ public final class UserCoordinator: Coordinator {
 
     private func createUserViewController() -> UserViewController {
         let userViewController = UserViewController()
-        userViewController.callback = { [weak self, loadUser] in
+        userViewController.callback = { [weak self, weak userViewController] in
             switch $0 {
             case .reload:
-                userViewController.setLoading()
-                loadUser()
+                userViewController?.setLoading()
+                self?.loadUser()
             case .logout:
                 self?.logoutCallback?()
             }
