@@ -4,7 +4,7 @@
 
 import UIKit
 
-public final class NavigationCoordinator: Coordinator {
+public final class NavigationCoordinator: NSObject, Coordinator {
 
     public var presentedCoordinator: Coordinator?
     public var rootViewController: UIViewController {
@@ -14,6 +14,8 @@ public final class NavigationCoordinator: Coordinator {
     private var coordinators = [Coordinator]()
 
     public init(_ coordinator: Coordinator? = nil) {
+        super.init()
+        navigationController.delegate = self
         if let coordinator = coordinator {
             setRootCoordinator(coordinator)
         }
@@ -36,6 +38,17 @@ public final class NavigationCoordinator: Coordinator {
         } else {
             coordinators.append(coordinator)
             navigationController.pushViewController(coordinator.rootViewController, animated: animated)
+        }
+    }
+
+}
+
+extension NavigationCoordinator: UINavigationControllerDelegate {
+
+    public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        guard let topViewController = coordinators.last?.rootViewController else { return }
+        if topViewController != viewController {
+            _ = coordinators.popLast()
         }
     }
 

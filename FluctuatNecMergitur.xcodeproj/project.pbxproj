@@ -200,10 +200,10 @@
 			isa = PBXGroup;
 			children = (
 				13576BCC213C3C39002C953D /* AppDelegate.swift */,
+				1378B8FE21432E82002CBA66 /* Router.swift */,
 				13576BD3213C3C3D002C953D /* Assets.xcassets */,
 				13576BD5213C3C3D002C953D /* LaunchScreen.storyboard */,
 				13576BD8213C3C3D002C953D /* Info.plist */,
-				1378B8FE21432E82002CBA66 /* Router.swift */,
 			);
 			path = FluctuatNecMergitur;
 			sourceTree = "<group>";

@@ -36,9 +36,9 @@ public final class CarDetailsCoordinator: Coordinator {
     
     private func createCarDetailsViewController() -> CarDetailsViewController {
         let carDetailsViewController = CarDetailsViewController()
-        carDetailsViewController.reloadCallback = { [loadCar] in
-            carDetailsViewController.setLoading()
-            loadCar()
+        carDetailsViewController.reloadCallback = { [weak self, weak carDetailsViewController] in
+            carDetailsViewController?.setLoading()
+            self?.loadCar()
         }
         return carDetailsViewController
     }

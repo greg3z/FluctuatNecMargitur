@@ -45,15 +45,15 @@ public final class CarsListCoordinator: Coordinator {
     
     private func createCarsListViewController() -> CarsListViewController {
         let carsListViewController = CarsListViewController()
-        carsListViewController.callback = { [weak self, loadCars] in
+        carsListViewController.callback = { [weak self, weak carsListViewController] in
             switch $0 {
             case .carSelected(let car):
                 self?.callback?(.carSelected(car))
             case .refresh:
-                loadCars()
+                self?.loadCars()
             case .reload:
-                carsListViewController.setLoading()
-                loadCars()
+                carsListViewController?.setLoading()
+                self?.loadCars()
             }
         }
         return carsListViewController

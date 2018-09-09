@@ -26,13 +26,13 @@ public final class LoginCoordinator: Coordinator {
     
     private func createLoginViewController() -> LoginViewController {
         let loginViewController = LoginViewController()
-        loginViewController.buttonTappedCallback = { [loginSuccessCallback] in
+        loginViewController.buttonTappedCallback = { [loginSuccessCallback, weak loginViewController] in
             UserModel.login($0) {
                 switch $0 {
                 case .success:
                     loginSuccessCallback?()
                 case .error(let error):
-                    loginViewController.setError(error)
+                    loginViewController?.setError(error)
                 }
             }
         }
