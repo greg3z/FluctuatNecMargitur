@@ -29,3 +29,17 @@ public final class CarDetailsViewController: LoadingErrorViewController {
     }
 
 }
+
+public struct CarDetails {
+
+    public let brand: String
+    public let model: String
+    public let power: String
+
+    public init(brand: String, model: String, power: String) {
+        self.brand = brand
+        self.model = model
+        self.power = power
+    }
+
+}

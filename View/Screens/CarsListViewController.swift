@@ -40,3 +40,15 @@ public final class CarsListViewController: LoadingErrorEmptyViewController {
     }
 
 }
+
+public struct CarList {
+
+    public let brand: String
+    public let model: String
+
+    public init(brand: String, model: String) {
+        self.brand = brand
+        self.model = model
+    }
+
+}
