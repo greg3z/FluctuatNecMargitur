@@ -10,16 +10,16 @@ import UIKit
 
 public final class ClosureBarButtonItem: UIBarButtonItem {
 
-    private var actionHandler: (() -> Void)?
+    private var callback: (() -> Void)?
 
-    convenience public init(barButtonSystemItem: UIBarButtonSystemItem, actionHandler: (() -> Void)?) {
+    convenience public init(barButtonSystemItem: UIBarButtonSystemItem, callback: (() -> Void)?) {
         self.init(barButtonSystemItem: barButtonSystemItem, target: nil, action: #selector(barButtonItemTapped))
         self.target = self
-        self.actionHandler = actionHandler
+        self.callback = callback
     }
 
     @objc func barButtonItemTapped(sender: UIBarButtonItem) {
-        actionHandler?()
+        callback?()
     }
     
 }

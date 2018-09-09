@@ -34,10 +34,8 @@ extension Coordinator {
         rootViewController.tabBarItem.title = title
     }
 
-    public func setDismissButton() {
-        rootViewController.navigationItem.leftBarButtonItem = ClosureBarButtonItem(barButtonSystemItem: .cancel) { [weak rootViewController] in
-            rootViewController?.dismiss(animated: true)
-        }
+    public func setDismissButton(_ callback: @escaping () -> Void) {
+        rootViewController.navigationItem.leftBarButtonItem = ClosureBarButtonItem(barButtonSystemItem: .cancel, callback: callback)
     }
 
 }

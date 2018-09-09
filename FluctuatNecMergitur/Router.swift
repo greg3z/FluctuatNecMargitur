@@ -95,14 +95,20 @@ private extension Router {
 
     private func createUserCoordinator() -> Coordinator {
         let userCoordinator = UserCoordinator()
-        userCoordinator.logoutCallback = { [createLogoutConfirmationCoordinator, createStartCoordinator, windowCoordinator, weak self] in
-            let logoutConfirmationCoordinator = createLogoutConfirmationCoordinator {
+        userCoordinator.logoutCallback = { [createStartCoordinator, windowCoordinator, weak self] in
+            let logoutConfirmationCoordinator = LogoutConfirmationCoordinator()
+            let logoutConfirmationNavigationCoordinator = NavigationCoordinator(logoutConfirmationCoordinator)
+            logoutConfirmationCoordinator.setNavBarTitle("Confirmation")
+            logoutConfirmationCoordinator.setDismissButton {
+                userCoordinator.dismissPresentedCoordinator()
+            }
+            logoutConfirmationCoordinator.logoutCallback = {
                 let startCoordinator = createStartCoordinator()
                 windowCoordinator.set(startCoordinator)
                 userCoordinator.dismissPresentedCoordinator(animated: false)
                 self?.tabBarCoordinator = nil
             }
-            userCoordinator.present(logoutConfirmationCoordinator)
+            userCoordinator.present(logoutConfirmationNavigationCoordinator)
         }
         return userCoordinator
     }
@@ -115,14 +121,5 @@ private extension Router {
         }
         return startCoordinator
     }
-
-    private func createLogoutConfirmationCoordinator(_ logoutCallback: @escaping () -> Void) -> Coordinator {
-        let logoutConfirmationCoordinator = LogoutConfirmationCoordinator()
-        logoutConfirmationCoordinator.logoutCallback = logoutCallback
-        let logoutConfirmationNavigationCoordinator = NavigationCoordinator(logoutConfirmationCoordinator)
-        logoutConfirmationCoordinator.setNavBarTitle("Confirmation")
-        logoutConfirmationCoordinator.setDismissButton()
-        return logoutConfirmationNavigationCoordinator
-    }
-
+    
 }
