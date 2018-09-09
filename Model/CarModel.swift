@@ -26,7 +26,7 @@ public struct CarModel {
     
     public static func getCars(_ callback: @escaping (Result<[Car]>) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            if arc4random_uniform(2) == 0 {
+            if arc4random_uniform(10) == 0 {
                 callback(.error("Request failed!"))
             } else {
                 let car1 = Car(id: 3, brand: "Mercedes", model: "Class E", power: 350)
@@ -39,7 +39,7 @@ public struct CarModel {
     
     public static func getCar(_ callback: @escaping (Result<Car>) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            if arc4random_uniform(2) == 0 {
+            if arc4random_uniform(10) == 0 {
                 callback(.error("Request failed!"))
             } else {
                 let car = Car(id: 7, brand: "Porsche", model: "911", power: 450)

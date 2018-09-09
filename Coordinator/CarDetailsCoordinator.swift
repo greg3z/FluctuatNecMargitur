@@ -19,6 +19,10 @@ public final class CarDetailsCoordinator: Coordinator {
     private lazy var carDetailsViewController = self.createCarDetailsViewController()
     
     public init() {
+        loadCar()
+    }
+
+    private func loadCar() {
         CarModel.getCar { [carDetailsViewController] in
             switch $0 {
             case .success(let car):
@@ -32,6 +36,10 @@ public final class CarDetailsCoordinator: Coordinator {
     
     private func createCarDetailsViewController() -> CarDetailsViewController {
         let carDetailsViewController = CarDetailsViewController()
+        carDetailsViewController.reloadCallback = { [loadCar] in
+            carDetailsViewController.setLoading()
+            loadCar()
+        }
         return carDetailsViewController
     }
     
