@@ -13,6 +13,8 @@ public final class LoginViewController: UIViewController {
     public var buttonTappedCallback: ((String) -> Void)?
 
     private lazy var textField = UITextField()
+    private lazy var button = UIButton()
+    private lazy var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
 
     public init() {
         super.init(nibName: nil, bundle: nil)
@@ -25,7 +27,6 @@ public final class LoginViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        let button = UIButton()
         button.setTitle("Login", for: .normal)
         button.setTitleColor(.blue, for: .normal)
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
@@ -33,17 +34,19 @@ public final class LoginViewController: UIViewController {
         textField.layer.borderWidth = 1
         textField.layer.cornerRadius = 10
         textField.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        let stackView = UIStackView(arrangedSubviews: [textField, button])
+        let stackView = UIStackView(arrangedSubviews: [textField, activityIndicator, button])
         stackView.axis = .vertical
         stackView.spacing = 50
         view.addCentered(stackView)
     }
 
     @objc private func buttonTapped() {
+        activityIndicator.startAnimating()
         buttonTappedCallback?(textField.text ?? "")
     }
     
     public func setError(_ error: String) {
+        activityIndicator.stopAnimating()
         textField.text = error
     }
 
