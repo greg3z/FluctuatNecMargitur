@@ -8,7 +8,7 @@ import View
 public final class WindowCoordinator: Coordinator {
 
     public var presentedCoordinator: Coordinator?
-    public var rootViewController: UIViewController {
+    public var viewController: UIViewController {
         return containerViewController
     }
 
@@ -19,12 +19,12 @@ public final class WindowCoordinator: Coordinator {
     public init(window: UIWindow) {
         self.window = window
         self.containerViewController = ContainerViewController(contentViewController: UIViewController())
-        window.rootViewController = rootViewController
+        window.rootViewController = viewController
         window.makeKeyAndVisible()
     }
 
     public func set(_ coordinator: Coordinator, animated: Bool = true) {
-        containerViewController.setViewController(coordinator.rootViewController)
+        containerViewController.setViewController(coordinator.viewController)
         self.coordinator = coordinator
     }
 

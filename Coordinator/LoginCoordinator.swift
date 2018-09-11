@@ -13,7 +13,7 @@ public final class LoginCoordinator: Coordinator {
     
     public var loginSuccessCallback: (() -> Void)?
 
-    public var rootViewController: UIViewController {
+    public var viewController: UIViewController {
         return loginViewController
     }
     public var presentedCoordinator: Coordinator?

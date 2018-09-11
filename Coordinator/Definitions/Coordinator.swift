@@ -8,7 +8,7 @@
 import View
 
 public protocol Coordinator: class {
-    var rootViewController: UIViewController { get }
+    var viewController: UIViewController { get }
     var presentedCoordinator: Coordinator? { get set }
 }
 
@@ -16,26 +16,26 @@ extension Coordinator {
 
     public func present(_ coordinator: Coordinator, animated: Bool = true, completion: (() -> Void)? = nil) {
         presentedCoordinator = coordinator
-        rootViewController.present(coordinator.rootViewController, animated: animated, completion: completion)
+        viewController.present(coordinator.viewController, animated: animated, completion: completion)
     }
 
     public func dismissPresentedCoordinator(animated: Bool = true, completion: (() -> Void)? = nil) {
-        presentedCoordinator?.rootViewController.dismiss(animated: animated) { [weak self] in
+        presentedCoordinator?.viewController.dismiss(animated: animated) { [weak self] in
             self?.presentedCoordinator = nil
             completion?()
         }
     }
 
     public func setNavBarTitle(_ title: String) {
-        rootViewController.title = title
+        viewController.title = title
     }
 
     public func setTabBarTitle(_ title: String) {
-        rootViewController.tabBarItem.title = title
+        viewController.tabBarItem.title = title
     }
 
     public func setDismissButton(_ callback: @escaping () -> Void) {
-        rootViewController.navigationItem.leftBarButtonItem = ClosureBarButtonItem(barButtonSystemItem: .cancel, callback: callback)
+        viewController.navigationItem.leftBarButtonItem = ClosureBarButtonItem(barButtonSystemItem: .cancel, callback: callback)
     }
 
 }

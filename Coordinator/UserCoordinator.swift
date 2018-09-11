@@ -12,7 +12,7 @@ import View
 public final class UserCoordinator: Coordinator {
 
     public var logoutCallback: (() -> Void)?
-    public var rootViewController: UIViewController {
+    public var viewController: UIViewController {
         return userViewController
     }
     public var presentedCoordinator: Coordinator?

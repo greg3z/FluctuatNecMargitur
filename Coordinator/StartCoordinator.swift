@@ -11,7 +11,7 @@ import View
 public final class StartCoordinator: Coordinator {
 
     public var startCallback: (() -> Void)?
-    public var rootViewController: UIViewController {
+    public var viewController: UIViewController {
         return startViewController
     }
     public var presentedCoordinator: Coordinator?

@@ -16,7 +16,7 @@ public final class CarsListCoordinator: Coordinator {
     }
     public var callback: ((Callback) -> Void)?
 
-    public var rootViewController: UIViewController {
+    public var viewController: UIViewController {
         return carsListViewController
     }
     public var presentedCoordinator: Coordinator?

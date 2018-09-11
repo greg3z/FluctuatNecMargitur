@@ -8,7 +8,7 @@ public final class TabBarCoordinator: Coordinator {
 
     private var coordinators = [Coordinator]()
     public var presentedCoordinator: Coordinator?
-    public var rootViewController: UIViewController {
+    public var viewController: UIViewController {
         return tabBarController
     }
 
@@ -29,7 +29,7 @@ public final class TabBarCoordinator: Coordinator {
     }
 
     private func setViewControllers() {
-        let viewControllers = coordinators.map { $0.rootViewController }
+        let viewControllers = coordinators.map { $0.viewController }
         tabBarController.setViewControllers(viewControllers, animated: false)
     }
 

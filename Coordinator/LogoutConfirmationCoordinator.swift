@@ -11,7 +11,7 @@ import View
 public final class LogoutConfirmationCoordinator: Coordinator {
 
     public var logoutCallback: (() -> Void)?
-    public var rootViewController: UIViewController {
+    public var viewController: UIViewController {
         return logoutConfirmationViewController
     }
     public var presentedCoordinator: Coordinator?

@@ -11,7 +11,7 @@ import View
 
 public final class CarDetailsCoordinator: Coordinator {
 
-    public var rootViewController: UIViewController {
+    public var viewController: UIViewController {
         return carDetailsViewController
     }
     public var presentedCoordinator: Coordinator?

@@ -7,7 +7,7 @@ import UIKit
 public final class NavigationCoordinator: NSObject, Coordinator {
 
     public var presentedCoordinator: Coordinator?
-    public var rootViewController: UIViewController {
+    public var viewController: UIViewController {
         return navigationController
     }
     private let navigationController = UINavigationController()
@@ -23,7 +23,7 @@ public final class NavigationCoordinator: NSObject, Coordinator {
 
     public func setRootCoordinator(_ coordinator: Coordinator) {
         coordinators = [coordinator]
-        navigationController.viewControllers = [coordinator.rootViewController]
+        navigationController.viewControllers = [coordinator.viewController]
     }
 
     public func pop(animated: Bool = true) {
@@ -34,10 +34,10 @@ public final class NavigationCoordinator: NSObject, Coordinator {
     public func push(_ coordinator: Coordinator, animated: Bool = true, resetStack: Bool = false) {
         if resetStack {
             coordinators = [coordinator]
-            navigationController.setViewControllers([coordinator.rootViewController], animated: animated)
+            navigationController.setViewControllers([coordinator.viewController], animated: animated)
         } else {
             coordinators.append(coordinator)
-            navigationController.pushViewController(coordinator.rootViewController, animated: animated)
+            navigationController.pushViewController(coordinator.viewController, animated: animated)
         }
     }
 
@@ -46,7 +46,7 @@ public final class NavigationCoordinator: NSObject, Coordinator {
 extension NavigationCoordinator: UINavigationControllerDelegate {
 
     public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        guard let topViewController = coordinators.last?.rootViewController else { return }
+        guard let topViewController = coordinators.last?.viewController else { return }
         if topViewController != viewController {
             _ = coordinators.popLast()
         }
